@@ -5,4 +5,4 @@ before-install:
 script:
     - docker build -t $DOCKER_USERNAME/ionic-angular .
     - docker run -t -d $DOCKER_USERNAME/ionic-angular
-    - docker push $DOCKER_USERNAME/ionic-angular:v5.2.4-7.2.4
+    - docker push $DOCKER_USERNAME/ionic-angular:latest
