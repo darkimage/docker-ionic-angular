@@ -3,6 +3,6 @@ services:
 before-install:
     - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
 script:
-    - docker build -t darkimage/ionic-angular .
-    - docker run -t -d darkimage/ionic-angular
-    - docker push
+    - docker build -t v5.2.4-7.2.4 .
+    - docker run -t -d v5.2.4-7.2.4
+    - docker push dark4image/ionic-angular:v5.2.4-7.2.4
