@@ -8,4 +8,5 @@ RUN echo y | android update sdk -a -u -t platform-tools,${ANDROID_APIS},build-to
  apt-get -qq update && \
  apt-get -qq install python && \
  npm install -g cordova && \
- npm install --unsafe-perm -g cordova-res
+ npm install --unsafe-perm -g cordova-res && \
+ npm install -g node-sass
