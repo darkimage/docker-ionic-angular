@@ -7,4 +7,5 @@ RUN echo y | android update sdk -a -u -t platform-tools,${ANDROID_APIS},build-to
  npm install -g @angular/cli@${ANGULAR_VER} && \
  apt-get -qq update && \
  apt-get -qq install python && \
- npm install -g cordova
+ npm install -g cordova && \
+ npm install -g cordova-res
