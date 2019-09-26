@@ -1,8 +1,7 @@
 services:
     - docker
-before-install:
-    - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
 script:
+    - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
     - docker build -t ionic-angular .
     - docker tag ionic-angular $DOCKER_USERNAME/ionic-angular:v5.2.4-7.2.4
     - docker push $DOCKER_USERNAME/ionic-angular:v5.2.4-7.2.4
